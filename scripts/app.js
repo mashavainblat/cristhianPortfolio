@@ -2,6 +2,23 @@ $( document ).ready(function() {
   console.log("hello world");
 
 
+function modesOfPerfectionTotalImg(){
+	// console.log($("#modesOfPerfection .item").length);
+	$("#modesOfPerfection .totalSlides").html($("#modesOfPerfection .item").length);
+
+	$('#modesOfPerfectionProjectCarousel').on('slid.bs.carousel', function() {
+	    currentModesOfPerfectionIndex = $('#modesOfPerfection div.active').index() + 1;
+	   $('#modesOfPerfection .currentSlide').html(currentModesOfPerfectionIndex);
+	});
+
+	var currentModesOfPerfectionIndex = $('#modesOfPerfection div.active').index() + 1;
+	$('#modesOfPerfection .currentSlide').html(currentModesOfPerfectionIndex);
+
+}
+modesOfPerfectionTotalImg();
+
+/********************************************************************/
+
 function duchampTotalImg(){
 	$("#duchamp .totalSlides").html($("#duchamp .item").length);
 
@@ -82,6 +99,23 @@ function sabonTotalImg(){
 
 }
 sabonTotalImg();
+
+/********************************************************************/
+
+function fragmentsTotalImg(){
+	// console.log($("#fragments .item").length);
+	$("#fragments .totalSlides").html($("#fragments .item").length);
+
+	$('#fragmentsProjectCarousel').on('slid.bs.carousel', function() {
+	    currentFragmentsIndex = $('#fragments div.active').index() + 1;
+	   $('#fragments .currentSlide').html(currentFragmentsIndex);
+	});
+
+	var currentFragmentsIndex = $('#fragments div.active').index() + 1;
+	$('#fragments .currentSlide').html(currentFragmentsIndex);
+
+}
+fragmentsTotalImg();
 
 
 }); //end document.ready()

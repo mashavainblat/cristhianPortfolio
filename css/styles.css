@@ -162,6 +162,18 @@ section.projectContainer img.projectSliderImage{
   margin-bottom:0;
 }
 
+.projectInfoContainer a.projectLink{
+  color:#000;
+  border-width: 0 0 3px;
+  border-style: dashed;
+  border-image: url('../img/icons/underlineBlack.svg') 4 fill round;
+
+}
+
+.projectInfoContainer a.projectLink:hover{
+  text-decoration: none;
+}
+
 
 
 section.projectContainer{
